@@ -54,3 +54,48 @@ img {
     display: block;
     margin: 20px auto;
 }
+/* =========================
+   DISEÑO RESPONSIVE CELULAR
+========================= */
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    article {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+}
