@@ -106,32 +106,91 @@ footer {
 
 /* RESPONSIVE */
 
-@media (max-width: 600px) {
+/* =========================
+   RESPONSIVE CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
 
     header {
         padding: 15px;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
     }
 
     nav a {
+
         display: block;
-        margin: 10px 0;
+
+        background: rgba(255,255,255,0.1);
+
+        padding: 12px;
+
+        border-radius: 8px;
+
+        text-align: center;
+
+        margin: 0;
     }
 
     main {
-        margin: 10px;
-        padding: 15px;
+
+        width: auto;
+
+        margin: 15px;
+
+        padding: 18px;
     }
 
     article {
-        padding: 10px;
+
+        padding: 15px;
+    }
+
+    img {
+
+        width: 100%;
+        height: auto;
     }
 
     button {
+
         width: 100%;
+
+        padding: 14px;
+
+        font-size: 16px;
+    }
+
+    input,
+    textarea {
+
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+    .calendario {
+
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
