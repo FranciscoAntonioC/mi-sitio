@@ -135,3 +135,75 @@ footer {
     }
 
 }
+/* =========================
+   CALENDARIO
+========================= */
+
+.calendario {
+
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.dia {
+
+    background-color: #2a5298;
+
+    color: white;
+
+    padding: 10px;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.fecha {
+
+    background: #f5f5f5;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.fecha:hover {
+
+    background: #dbe8ff;
+
+    transform: scale(1.05);
+}
+
+.evento {
+
+    background: #ffd700;
+
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .calendario {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fecha {
+
+        padding: 15px;
+    }
+
+}
